@@ -36,6 +36,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
+            sudo echo ============================
             sudo docker pull vinayakvispute/vinayak-ci-cd-test:latest
             sudo docker stop web-app || true
             sudo docker rm web-app || true
