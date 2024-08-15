@@ -18,5 +18,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Generate Prima Client
+        run: cd packages/db && npx prisma generate && cd ../..
+
       - name: Run Build
         run: npm run build
