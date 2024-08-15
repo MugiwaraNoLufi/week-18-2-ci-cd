@@ -27,4 +27,4 @@ jobs:
           tags: vinayakvispute/vinayak-ci-cd-test:latest # Replace with your Docker Hub username and repository
 
       - name: Verify Pushed Image
-        run: vinayakvispute/vinayak-ci-cd-test:latest # Replace with your Docker Hub username and repository
+        run: docker pull vinayakvispute/vinayak-ci-cd-test:latest # Replace with your Docker Hub username and repository
