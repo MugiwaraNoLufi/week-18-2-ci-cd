@@ -13,7 +13,11 @@ export const authOptions = {
           placeholder: "1231231231",
           required: true,
         },
-        password: { label: "Password", type: "password", required: true },
+        password: {
+          label: "Ring Central Password",
+          type: "password",
+          required: true,
+        },
       },
       // TODO: User credentials type from next-aut
       async authorize(credentials: any) {
